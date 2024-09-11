@@ -1,0 +1,389 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+        }
+
+
+        .section1 {
+            width: 70%;
+            height: 15rem;
+            background-color: pink;
+            background: #00c3ff;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffff1c, #00c3ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 5px;
+            box-shadow:
+                0.6px 1.3px 1.4px rgba(0, 0, 0, 0.014),
+                1.5px 3.2px 3.5px rgba(0, 0, 0, 0.02),
+                2.9px 6px 6.5px rgba(0, 0, 0, 0.025),
+                5.1px 10.7px 11.6px rgba(0, 0, 0, 0.03),
+                9.6px 20.1px 21.7px rgba(0, 0, 0, 0.036),
+                23px 48px 52px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .profile-img-section {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .profile-data {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+
+
+        .profile-img {
+            height: 8rem;
+            width: 8rem;
+            border-radius: 30%;
+        }
+
+
+        .section2 {
+            width: 70%;
+            height: 8rem;
+            /* background-color: aquamarine; */
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section3 {
+            width: 70%;
+            height: 20rem;
+            /* background-color: aquamarine; */
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section4 {
+            width: 70%;
+            height: 15rem;
+            /* background-color: aquamarine; */
+            border: 1px solid white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+
+        .section-title {
+            /* height: 10%; */
+            color:darkblue;
+            font-weight: bold;
+        }
+
+
+        .ed-table {
+            width: 100%;
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+
+        th,
+        td {
+            padding: 1rem;
+            border: 1px solid black;
+        }
+
+
+        .companies {
+            font-weight: bold;
+        }
+
+        .color-primary{
+            color: darkblue;
+        }
+
+        .section5 {
+            width: 70%;
+            height: 10rem;
+            /* background-color: aquamarine; */
+            /* border: 1px solid aquamarine; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            /* padding: 10px; */
+        }
+
+        .section6 {
+            width: 70%;
+            height: 2rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            font-weight: bold;
+
+            background: black;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, yellow, skyblue);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, yellow, skyblue);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        li {
+            list-style: circle;
+            margin-left: 2rem;
+        }
+
+        .text-white {
+            color: white;
+        }
+header
+{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 25px;	
+}
+
+#info
+{
+	font-size: 18px;
+	color: #555;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+a{
+	color: #074E8C;
+}
+
+.scrollbar
+{
+	margin-left: 30px;
+	float: left;
+	height: 300px;
+	width: 65px;
+	background: blanchedalmond;
+	overflow-y: scroll;
+	margin-bottom: 25px;
+}
+
+.force-overflow
+{
+	min-height: 450px;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: skyblue;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(76, 190, 229, 0.2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+/* From Uiverse.io by PriyanshuGupta28 */ 
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.rating label:before {
+  content: '\2605';
+  font-size: 30px;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #6f00ff;
+  transition: color 0.3s;
+}
+
+   
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+ </head>
+ <body>
+    <div class="section1">
+        <div class="profile-img-section">
+            <img src="C:\Users\Subiksha\Downloads\butterfly.jpg" class="profile-img">
+        </div>
+        <div class="profile-data">
+            <h1>
+                Subiksha S
+            </h1>
+            <h3>
+                subi282004@gmail.com
+            </h3>
+        </div>
+    </div>
+    <div class="section2">
+        <h1 class="section-title">
+            Objective
+        </h1>  
+        <p>
+            A highly motivated software engineering student, specializing in Python, Java, and Powerbi and tableau. Passionate about leveraging technology to create innovative solutions that solve real-world problems.
+        </p>
+      </div>
+    <div class="section3">
+        <h1 class="section-title">
+            Education
+        </h1>
+        <table class = "ed-table">
+            <tr>
+                <th>Degree</th>
+                <th>Campus</th>
+                <th>Score %</th>
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td>Kongu Kalvi Nilayam Hr.Sec.School</td>
+                <td>92%</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td>M.S.Vidhyalaya Matriculation.Hr.Sec.School</td>
+                <td>88%</td>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>Sri Shakthi Institute of Engineering and Technology</td>
+                <td>90%</td>
+            </tr>
+        </table>
+    </div>
+    <div class="section4">
+        <h1 class="section-title">
+            Internships
+        </h1>
+        <p>
+            <span class="companies">DATA ANALYST/BANGALORE,KARNATAKA</span><br>
+            May 2022
+            Managed and grew key accounts by developing strong relationships,identifying opportunities and implementing data analtical skills.
+        </p>
+        <br>
+        <p>
+            <span class="companies">POWERBI BEGINNER/CHENNAI</span><br>
+            Skilled and learned more about Powerbi tools and technologies.
+        </p>
+    </div>
+    <div class="section5">
+        <h1 class="section-title color-primary">
+            Skills
+        </h1><br>
+        <ul>
+            <li>EXCEL</li>
+            <li>POWERBI</li>
+            <li>SQL</li>
+            <li>STATISTICS</li>
+        </ul>
+    </div>
+    <div class="section6">
+        <a href="tel:+91 9944160415">
+            <i class="fa-solid fa-phone text-white"></i>
+        </a>
+        <a href="mailto:subi282004@gmail.com">
+            <i class="fa=solid fa-envelope text-white"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa-brands fa-linkedin-in text-white"></i>
+        </a>
+         
+<div class="rating">
+  <input value="5" name="rating" id="star5" type="radio">
+  <label for="star5"></label>
+  <input value="4" name="rating" id="star4" type="radio">
+  <label for="star4"></label>
+  <input value="3" name="rating" id="star3" type="radio">
+  <label for="star3"></label>
+  <input value="2" name="rating" id="star2" type="radio">
+  <label for="star2"></label>
+  <input value="1" name="rating" id="star1" type="radio">
+  <label for="star1"></label>
+</div>
+
+    </div>
+ </body>
+ </html>
+ 
+ 
